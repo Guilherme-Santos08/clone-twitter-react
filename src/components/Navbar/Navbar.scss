@@ -3,10 +3,10 @@ aside {
    align-items: flex-start;
    flex-direction: column;
 
-   position: fixed; // sticky
+   position: sticky; // sticky
    top: 0;
    left: 0;
    
-   padding: 9px 19px 20px;
+   padding: 5px 19px 20px;
    max-height: 100vh;
 }

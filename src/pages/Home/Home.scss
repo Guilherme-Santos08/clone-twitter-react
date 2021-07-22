@@ -1,4 +1,15 @@
 .home {
-   height: 100vh;
    background-color: #000000;
+   height: 100vh;
+   width: 100%;
+
+   > div {
+      max-width: 1300px;
+      margin: 0 auto;
+
+      display: flex;
+      // flex: 1 2;
+      // align-items: center;
+      // justify-content: space-ar;
+   }
 }

@@ -1,0 +1,166 @@
+@import "../../styles/variables.scss";
+
+main {
+   max-width: 600px;
+   width: 100%;
+   min-height: 100vh;
+   margin-left: 30px;
+
+   border: 1px solid rgb(47, 51, 54);
+
+   .twetts {
+      // display: flex;
+      flex-direction: column;
+
+      .top-twetts {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         font-size: 20px;
+         font-weight: 800;
+         color: $white;
+
+         padding: 0 17px;
+
+         cursor: pointer;
+         height: 58px;
+
+         span {
+            svg {
+               fill: $twitter;
+               width: 25px;
+            }
+         }
+      }
+
+      .twettar {
+         display: flex;
+         width: 100%;
+         padding: 8px 16px;
+
+         border-top: 1px solid rgb(47, 51, 54);
+         border-bottom: 1px solid rgb(47, 51, 54);
+
+         .twettar-avatar {
+            margin-right: 12px;
+            img {
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+            }
+         }
+
+         .twettar-write {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .twettar-input {
+               padding: 12px 0;
+               input {
+                  font-size: 1.3rem;
+                  color: $white;
+
+                  border: none;
+                  outline: none;
+                  background-color: transparent;
+
+                  &::placeholder {
+                     color: rgb(105, 107, 109);
+                  }
+               }
+            }
+            .twettar-everyone {
+               visibility: hidden;
+               opacity: 0;
+               display: none;
+
+               font-size: 0.9rem;
+               font-family: "Roboto";
+               font-weight: 700;
+               color: $twitter;
+
+               padding-bottom: 12px;
+               width: 100%;
+               border-bottom: 1px solid rgb(47, 51, 54);
+
+               > div {
+                  display: flex;
+                  align-items: center;
+                  width: 161px;
+                  cursor: pointer;
+
+                  padding: 8px;
+                  border-radius: 25px;
+                  transition: background 0.1s ease-in-out;
+
+                  &:hover {
+                     background-color: $twitter-dark-hover;
+                  }
+                  svg {
+                     width: 15px;
+                     margin-right: 0.5rem;
+                     fill: #1da1f2;
+                  }
+               }
+               &.show {
+                  visibility: visible;
+                  opacity: 1;
+                  display: block;
+               }
+            }
+            .twettar-options {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               .twettar-options--icons {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 12px;
+
+                  .twettar-icons {
+                     display: flex;
+                     align-items: center;
+                     padding: 12px;
+                     border-radius: 50%;
+                     cursor: pointer;
+
+                     &:hover {
+                        background-color: $twitter-dark-hover;
+                     }
+                  }
+               }
+
+               .twettar-options--btn {
+                  margin-top: 12px;
+                  button {
+                     font-size: 0.95rem;
+
+                     width: 73px;
+                     height: 40px;
+                     background-color: #0E5079;
+                     color: $gray;
+                     font-weight: 700;
+
+                     border-radius: 999px;
+                     cursor: not-allowed;
+                     border: none;
+
+                     &.allow {
+                        background-color: $twitter;
+                        color: white;
+                        cursor: pointer;
+                     }
+                  }
+               }
+
+               svg {
+                  width: 22px;
+                  fill: $twitter;
+               }
+            }
+         }
+      }
+   }
+}
