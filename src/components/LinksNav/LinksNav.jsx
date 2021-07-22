@@ -2,10 +2,10 @@ import "./LinksNav.scss";
 
 const LinksNav = ({ title, icons }) => {
    return (
-      <button>
+      <div className="linkPages">
          {icons}
          <span>{title}</span>
-      </button>
+      </div>
    );
 };
 
