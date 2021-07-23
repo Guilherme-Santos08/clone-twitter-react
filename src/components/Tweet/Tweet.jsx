@@ -134,9 +134,13 @@ const Tweet = () => {
             </div>
          </div>
 
-         <div className="tweet-posts">
+         <div className="test"></div>
+
+         <section className="tweet-posts">
          <TweetPost />
-         </div>
+         <TweetPost />
+         <TweetPost />
+         </section>
       </main>
    );
 };

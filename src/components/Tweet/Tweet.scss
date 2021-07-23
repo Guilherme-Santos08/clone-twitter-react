@@ -163,4 +163,11 @@ main {
          }
       }
    }
+
+   .test {
+      width: 100%;
+      height: 12px;
+      background-color: $secondary;
+      border-bottom: 1px solid $outline;
+   }
 }
