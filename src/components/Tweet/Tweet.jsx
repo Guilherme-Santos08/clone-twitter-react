@@ -1,10 +1,11 @@
+import TweetPost from "../TweetPost/TweetPost";
 import "./Tweet.scss";
 
 const Tweet = () => {
    return (
       <main>
-         <div className="twetts">
-            <div className="top-twetts">
+         <div className="tweets">
+            <div className="top-tweets">
                <span>Home</span>
                <span>
                   <svg
@@ -18,18 +19,18 @@ const Tweet = () => {
                   </svg>
                </span>
             </div>
-            <div className="twettar">
-               <div className="twettar-avatar">
+            <div className="tweetar">
+               <div className="tweetar-avatar">
                   <img
                      src="https://pbs.twimg.com/profile_images/1418301759898927107/YSLvXCM7_400x400.png"
                      alt="Avatar Profile"
                   />
                </div>
-               <div className="twettar-write">
-                  <div className="twettar-input">
+               <div className="tweetar-write">
+                  <div className="tweetar-input">
                      <input type="text" placeholder="What's happening?" />
                   </div>
-                  <div className="twettar-everyone show">
+                  <div className="tweetar-everyone show">
                      <div>
                         <svg
                            viewBox="0 0 24 24"
@@ -43,9 +44,9 @@ const Tweet = () => {
                         <span>Everyone can reply</span>
                      </div>
                   </div>
-                  <div className="twettar-options">
-                     <div className="twettar-options--icons">
-                        <div className="twettar-icons">
+                  <div className="tweetar-options">
+                     <div className="tweetar-options--icons">
+                        <div className="tweetar-icons">
                            <svg
                               viewBox="0 0 24 24"
                               aria-hidden="true"
@@ -62,7 +63,7 @@ const Tweet = () => {
                            </svg>
                         </div>
 
-                        <div className="twettar-icons">
+                        <div className="tweetar-icons">
                            <svg
                               viewBox="0 0 24 24"
                               aria-hidden="true"
@@ -75,7 +76,7 @@ const Tweet = () => {
                            </svg>
                         </div>
 
-                        <div className="twettar-icons">
+                        <div className="tweetar-icons">
                            <svg
                               viewBox="0 0 24 24"
                               aria-hidden="true"
@@ -87,7 +88,7 @@ const Tweet = () => {
                            </svg>
                         </div>
 
-                        <div className="twettar-icons">
+                        <div className="tweetar-icons">
                            <svg
                               viewBox="0 0 24 24"
                               aria-hidden="true"
@@ -110,7 +111,7 @@ const Tweet = () => {
                            </svg>
                         </div>
 
-                        <div className="twettar-icons">
+                        <div className="tweetar-icons">
                            <svg
                               viewBox="0 0 24 24"
                               aria-hidden="true"
@@ -125,12 +126,16 @@ const Tweet = () => {
                            </svg>
                         </div>
                      </div>
-                     <div className="twettar-options--btn">
+                     <div className="tweetar-options--btn">
                         <button>Tweet</button>
                      </div>
                   </div>
                </div>
             </div>
+         </div>
+
+         <div className="tweet-posts">
+         <TweetPost />
          </div>
       </main>
    );

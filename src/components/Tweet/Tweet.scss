@@ -8,11 +8,11 @@ main {
 
    border: 1px solid rgb(47, 51, 54);
 
-   .twetts {
+   .tweets {
       // display: flex;
       flex-direction: column;
 
-      .top-twetts {
+      .top-tweets {
          display: flex;
          align-items: center;
          justify-content: space-between;
@@ -34,7 +34,7 @@ main {
          }
       }
 
-      .twettar {
+      .tweetar {
          display: flex;
          width: 100%;
          padding: 8px 16px;
@@ -42,7 +42,7 @@ main {
          border-top: 1px solid rgb(47, 51, 54);
          border-bottom: 1px solid rgb(47, 51, 54);
 
-         .twettar-avatar {
+         .tweetar-avatar {
             margin-right: 12px;
             img {
                width: 50px;
@@ -51,11 +51,11 @@ main {
             }
          }
 
-         .twettar-write {
+         .tweetar-write {
             display: flex;
             flex-direction: column;
             width: 100%;
-            .twettar-input {
+            .tweetar-input {
                padding: 12px 0;
                input {
                   font-size: 1.3rem;
@@ -70,7 +70,7 @@ main {
                   }
                }
             }
-            .twettar-everyone {
+            .tweetar-everyone {
                visibility: hidden;
                opacity: 0;
                display: none;
@@ -109,17 +109,17 @@ main {
                   display: block;
                }
             }
-            .twettar-options {
+            .tweetar-options {
                display: flex;
                justify-content: space-between;
                align-items: center;
 
-               .twettar-options--icons {
+               .tweetar-options--icons {
                   display: flex;
                   align-items: center;
                   margin-top: 12px;
 
-                  .twettar-icons {
+                  .tweetar-icons {
                      display: flex;
                      align-items: center;
                      padding: 12px;
@@ -132,7 +132,7 @@ main {
                   }
                }
 
-               .twettar-options--btn {
+               .tweetar-options--btn {
                   margin-top: 12px;
                   button {
                      font-size: 0.95rem;
