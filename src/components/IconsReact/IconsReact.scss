@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+
+.tweets__post--react {
+   margin-top: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 13px;
+   color: $gray;
+
+   transition: background-color 0.2s ease-in-out;
+
+   .tweets__post--react-g {
+      display: flex;
+      align-items: center;
+   }
+
+   span {
+      padding: 0 4px;
+   }
+   svg {
+      width: 1.35em;
+      height: 1.35em;
+      // max-width: 100%;
+      fill: $gray;
+
+      border-radius: 999px;
+   }
+
+   .tweets__post--react--comment,
+   .tweets__post--react-retweet,
+   .tweets__post--react--like,
+   .tweets__post--react--share {
+      width: 2.25rem;
+      height: 2.25rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 999px;
+      transition: background-color 0.2s ease-in-out;
+   }
+
+   .react-blue {
+      &:hover {
+         color: $twitter;
+
+         .tweets__post--react--comment, .tweets__post--react--share {
+            background-color: $twitter-dark-hover;
+         }
+
+         svg {
+            fill: $twitter;
+         }
+      }
+   }
+   .react-green {
+      &:hover {
+         color: $retweet;
+
+         .tweets__post--react-retweet {
+            background-color: rgba(23, 191, 99, 0.1);
+         }
+
+         svg {
+            fill: $retweet;
+         }
+      }
+   }
+   .react-red {
+      &:hover {
+         color: $like;
+
+         .tweets__post--react--like {
+            background-color: rgba(244, 36, 94, 0.1);
+         }
+
+         svg {
+            fill: $like;
+         }
+      }
+   }
+}
