@@ -60,7 +60,8 @@ main {
                input {
                   font-size: 1.3rem;
                   color: $white;
-
+                  width: 100%;
+                  
                   border: none;
                   outline: none;
                   background-color: transparent;
@@ -92,7 +93,7 @@ main {
 
                   padding: 8px;
                   border-radius: 25px;
-                  transition: background 0.1s ease-in-out;
+                  transition: background-color 0.1s ease-in-out;
 
                   &:hover {
                      background-color: $twitter-dark-hover;
@@ -132,25 +133,52 @@ main {
                   }
                }
 
-               .tweetar-options--btn {
+               .tweetar-options--btns {
+                  display: flex;
+                  align-items: center;
                   margin-top: 12px;
-                  button {
+
+                  .tweetar-options--btns-more {
+                     width: 32px;
+                     height: 32px;
+
+                     background-color: transparent;
+                     margin-right: 12px;
+
+                     border-radius: 999px;
+                     border: 1px solid $twitter;
+                     cursor: pointer;
+                     transition: background-color 0.2s ease-in-out;
+
+                     &:hover {
+                        background-color: $twitter-dark-hover;
+                     }
+
+                     svg {
+                        width: 16px;
+                     }
+                  }
+                  .tweetar-options--btns-tweet {
                      font-size: 0.95rem;
 
                      width: 73px;
                      height: 40px;
-                     background-color: #0E5079;
+                     background-color: #0e5079;
                      color: $gray;
                      font-weight: 700;
 
                      border-radius: 999px;
                      // cursor: not-allowed;
                      border: none;
+                     transition: background-color 0.1s ease-in-out;
 
                      &.allow {
                         background-color: $twitter;
                         color: white;
                         cursor: pointer;
+                        &:hover {
+                           background-color: rgb(26, 145, 218);
+                        }
                      }
                   }
                }
