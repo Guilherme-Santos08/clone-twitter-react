@@ -1,7 +1,7 @@
 import IconsReact from "../IconsReact/IconsReact";
 import "./TweetPost.scss";
 
-const TweetPost = () => {
+const TweetPost = ({ children }) => {
    return (
       <article>
          <div className="tweet">
@@ -36,10 +36,7 @@ const TweetPost = () => {
                   </div>
                </div>
                <div className="tweets__post--text">
-                  <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Voluptas vel quo sit atque expedita culpa?
-                  </p>
+                  <p>{children}</p>
                </div>
                <IconsReact />
             </div>
