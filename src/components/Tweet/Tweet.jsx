@@ -193,7 +193,7 @@ const Tweet = () => {
 
          <section className="tweet-posts">
             {tweets.map((tweet) => {
-               return <TweetPost children={tweet.title} />;
+               return <TweetPost key={tweet.title} children={tweet.title} />;
             })}
          </section>
       </main>

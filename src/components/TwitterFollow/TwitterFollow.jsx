@@ -1,6 +1,6 @@
 import "./TwitterFollow.scss";
 
-const TwitterFollow = ({}) => {
+const TwitterFollow = () => {
    return (
       <div className="follow">
          <div className="follow__person">

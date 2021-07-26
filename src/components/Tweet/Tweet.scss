@@ -199,6 +199,11 @@ main {
       border-bottom: 1px solid $outline;
    }
 
+   .tweet-posts {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
    @media (max-width: 800px) {
       margin-left: 0;
       max-width: 612px;
