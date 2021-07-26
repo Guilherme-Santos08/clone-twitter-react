@@ -6,16 +6,16 @@ const TwitterFollow = () => {
          <div className="follow__person">
             <div className="follow__person--img">
                <img
-                  src="https://pbs.twimg.com/profile_images/1418301759898927107/YSLvXCM7_400x400.png"
+                  src="https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg"
                   alt="Follow"
                />
             </div>
             <div className="follow__person--person">
                <span className="follow__person--name">
-                  Guii Santos
+                  Twitter-Clone
                </span>
                <span className="follow__person--username">
-                  @DzScript
+                  @TwitterClone
                </span>
             </div>
          </div>

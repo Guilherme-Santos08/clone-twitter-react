@@ -49,7 +49,7 @@ const Tweet = () => {
             <div className="tweetar">
                <div className="tweetar-avatar">
                   <img
-                     src="https://pbs.twimg.com/profile_images/1418301759898927107/YSLvXCM7_400x400.png"
+                     src="https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg"
                      alt="Avatar Profile"
                   />
                </div>

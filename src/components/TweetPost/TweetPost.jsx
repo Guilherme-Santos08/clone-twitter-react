@@ -7,7 +7,7 @@ const TweetPost = ({ children }) => {
          <div className="tweet">
             <div className="tweets__photo">
                <img
-                  src="https://pbs.twimg.com/profile_images/1418301759898927107/YSLvXCM7_400x400.png"
+                  src="https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg"
                   alt="Perfil__photo"
                />
             </div>
@@ -15,10 +15,10 @@ const TweetPost = ({ children }) => {
                <div className="tweets__post--profile">
                   <div>
                      <span className="tweets__post--profile-name">
-                        GuiiSantos
+                        Twitter-Clone
                      </span>
                      <span className="tweets__post--profile-username">
-                        @DzScript
+                        @TwitteClone
                      </span>
                   </div>
                   <div className="tweets__post--profile-more">
