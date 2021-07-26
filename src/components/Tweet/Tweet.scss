@@ -61,7 +61,7 @@ main {
                   font-size: 1.3rem;
                   color: $white;
                   width: 100%;
-                  
+
                   border: none;
                   outline: none;
                   background-color: transparent;
@@ -197,5 +197,31 @@ main {
       height: 12px;
       background-color: $secondary;
       border-bottom: 1px solid $outline;
+   }
+
+   @media (max-width: 800px) {
+      margin-left: 0;
+      max-width: 612px;
+   }
+
+   @media (max-width: 680px) {
+      .tweetar-icons:nth-of-type(3),
+      .tweetar-icons:nth-of-type(5) {
+         display: none;
+         opacity: 0;
+         visibility: hidden;
+         width: 0;
+         height: 0;
+         padding: 0px !important; // Não estava conseguindo tirar o paddin, tive que usar o "!important", (eu sei que não é recomendado usa-lo
+
+         svg {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            padding: 0px;
+         }
+      }
    }
 }
