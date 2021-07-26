@@ -1,4 +1,5 @@
-# clone-twitter-react
+
+<h1 align="center">Clone do twitter com ReactJs</h1>
 
 <p align="center">
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
