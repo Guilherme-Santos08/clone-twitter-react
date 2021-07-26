@@ -126,6 +126,8 @@ const NavBar = () => {
             }
             title={"More"}
          />
+
+         <button>Tweet</button>
       </aside>
    );
 };
