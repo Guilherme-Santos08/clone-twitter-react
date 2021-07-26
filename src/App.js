@@ -1,10 +1,19 @@
-import './App.css';
-import Home from './pages/Home/Home';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import "./App.css";
+import TweetMobile from "./pages/Tweet/Tweet";
 
 function App() {
-  return (
-    <Home />
-  );
+   return (
+      <Router>
+         <Switch>
+           <Route path="/home" exact component={Home}/>
+           <Route path="/compose/tweet" component={TweetMobile}/>
+         </Switch>
+      </Router>
+   );
 }
 
 export default App;
