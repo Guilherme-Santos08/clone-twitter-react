@@ -3,6 +3,7 @@
 <p align="center">
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-live">Live do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <p>
@@ -15,3 +16,6 @@ Resolvi clonar o twitter para treinar conceitos do ReactJs, até agora ja aprend
 ## 🚀 Tecnologias
 * ReactJs
 * Sass
+
+## Live
+* https://clone-twitter-react.vercel.app/home
