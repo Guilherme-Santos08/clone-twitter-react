@@ -9,7 +9,7 @@ function App() {
    return (
       <Router>
          <Switch>
-           <Route path="/home" exact component={Home}/>
+           <Route path="/" exact component={Home}/>
            <Route path="/compose/tweet" component={TweetMobile}/>
          </Switch>
       </Router>
